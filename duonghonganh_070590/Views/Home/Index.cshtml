@@ -1,0 +1,315 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid mt-2">
+    <div id="toolbar">
+        <h3>Covid-19 all around the world</h3>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">confirmed : </span>
+                <span  id="confirmed" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">recovered : </span>
+                <span id="recovered" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">deaths : </span>
+                <span id="deaths" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">mortality rate : </span>
+                <span id="mortalityrate" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+</div>
+
+
+<div class="container-fluid mt-2">
+    <div id="toolbar">
+        <h3>Covid-19 in Viet Nam</h3>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">confirmed : </span>
+                <span id="confirmedvn" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">recovered : </span>
+                <span id="recoveredvn" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">deaths : </span>
+                <span id="deathsvn" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">mortality rate : </span>
+                <span id="mortalityratevn" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+</div>
+
+
+
+<div class="container-fluid mt-2">
+    <div id="toolbar">
+        <h3>Vaccines Data in Vietnam</h3>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">administered : </span>
+                <span id="administered" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">people_vaccinated : </span>
+                <span id="people_vaccinated" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">people_partially_vaccinated : </span>
+                <span id="people_partially_vaccinated" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+           
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    
+</div>
+
+<div class="container-fluid mt-2">
+    <div id="toolbar">
+        <h3>Search by country names</h3>
+    </div>
+    
+    <div class="col-md-12">
+        <div class="info-box">
+            <input id="txtcountry" type="text" value="Vietnam" />
+            <input id="btnsearch" type="button" value="Search" />
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">confirmed : </span>
+                <span id="confirmeds" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">recovered : </span>
+                <span id="recovereds" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">deaths : </span>
+                <span id="deathss" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-people-outline"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">mortality rate : </span>
+                <span id="mortalityrates" class="info-box-number">0</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+</div>
+
+
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table-locale-all.min.js"></script>
+<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+<script>
+    axios.get('https://covid-api.mmediagroup.fr/v1/cases').then(function (response) {
+        globaldata(response.data.Global);
+    }).catch(function (error) {
+        console.log(error);
+    })
+
+    axios.get('https://covid-api.mmediagroup.fr/v1/cases?country=Vietnam').then(function (response) {
+        globaldatavn(response.data);
+    }).catch(function (error) {
+        console.log(error);
+    })
+
+    axios.get('https://covid-api.mmediagroup.fr/v1/vaccines?country=Vietnam').then(function (response) {
+        vacxinvietnam(response.data);
+    }).catch(function (error) {
+        console.log(error);
+    })
+
+
+    function globaldata(data) {
+        $("#confirmed").text(numberFormatter(data.All.confirmed));
+
+        $("#recovered").text(numberFormatter(data.All.recovered));
+
+        $("#deaths").text(numberFormatter(data.All.deaths));
+
+        $("#mortalityrate").text(numberFormatter((data.All.confirmed + data.All.recovered) / data.All.deaths));
+        
+    }
+
+    function globaldatavn(data) {
+        $("#confirmedvn").text(numberFormatter(data.All.confirmed));
+
+        $("#recoveredvn").text(numberFormatter(data.All.recovered));
+
+        $("#deathsvn").text(numberFormatter(data.All.deaths));
+
+        $("#mortalityratevn").text(numberFormatter((data.All.confirmed + data.All.recovered) / data.All.deaths));
+
+    }
+
+    function vacxinvietnam(data) {
+        $("#administered").text(numberFormatter(data.All.administered));
+
+        $("#people_vaccinated").text(numberFormatter(data.All.people_vaccinated));
+
+        $("#people_partially_vaccinated").text(numberFormatter(data.All.people_partially_vaccinated));
+
+    }
+      
+    $("#btnsearch").click(function () {
+        var country = $("#txtcountry").val(); 
+        axios.get('https://covid-api.mmediagroup.fr/v1/cases?country=' + country).then(function (response) {
+            viewdata(response.data);
+
+        }).catch(function (error) {
+            console.log(error);
+        })
+    });
+
+
+    function viewdata(data) { 
+        $("#confirmeds").text(numberFormatter(data.All.confirmed));
+
+        $("#recovereds").text(numberFormatter(data.All.recovered));
+
+        $("#deathss").text(numberFormatter(data.All.deaths));
+
+        $("#mortalityrates").text(numberFormatter((data.All.confirmed + data.All.recovered) / data.All.deaths));
+
+    }
+
+    function numberFormatter(value) {
+        return value.toLocaleString('en-US');
+    }
+
+ 
+    
+</script>
